@@ -18,7 +18,13 @@ header{
 	height:100vh; 
 }
 
-
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+    
+}
 .row{
 	max-width: 1000px;
 	margin: 0 auto;
@@ -68,8 +74,8 @@ header{
 	0%{color: mediumpurple;}
 	25%{color:rebeccapurple;}
 	50%{color: purple;}
-    75%{color: re;}
-	100%{color:red;}
+    75%{color: mediumvioletred;}
+	100%{color:darkred;}
 }
 
 
@@ -81,6 +87,7 @@ header{
 
 .signin
 {
+    opacity: 0.8;
     margin: 0;
     padding: 0;
     background: #efefef;
@@ -98,10 +105,17 @@ header{
     position: relative;
     margin: 5% auto;
     width:600px;
-    height :400px;
+    height :450px;
     background :#fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     
+}
+
+#link,#linkt
+{
+    
+    font-size: 15px;
+    text-decoration: none;
 }
 
 .left_box
@@ -116,12 +130,51 @@ header{
     
 }
 
+.link > div:nth-child(1),.link2 > div:nth-child(2) {
+background:rgb(206, 204, 204);
+transition: all .3s ease-in-out;
+}
+
+.link > div:nth-child(2) {
+background:transparent !important;
+transition: all .3s ease-in-out;
+}
+.sign
+    position: absolute;
+    top: 0;
+    left: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    
+}
+
+
+.left_box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-image: url(../image/lbox.jpg);
+    background-size: cover;
+    
+}
+
+a
+{
+   color: #ff6600 ; 
+}
 h1
 {
     margin: 0 0 20px 0;
     font-weight: 300;
     font-size: 28px;
-    
+    color: #00aff0 ;
 }
 
 input[type="text"],
@@ -174,7 +227,7 @@ input[typr="submit"]:focus
     box-sizing: border-box;
     padding: 40px;
     width: 300px;
-    height:400px;
+    height:450px;
     background-image: url(../image/colorimg.jpg);
     background-size: cover;
     
@@ -206,32 +259,160 @@ input[typr="submit"]:focus
     
 }
 
-button.social
-{
-    margin-bottom: 20px;
-    width:220px;
-    height:36px;
-    border:none;
-    border-radius: 2px;
-    color:#fff;
-    font-family: sans-serif;
-    font-weight:500;
-    transition: 0.2s ease;
-    cursor: pointer;
-    
+
+
+
+
+
+.homebody{
+    background-image: url('../image/img01.png');
+    background-color: #3b3838;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 15px;
+}
+.card{
+    background-color: #7e7e7e;
+    margin-bottom: auto;
 }
 
-.facebook
-{
-    background: darkblue;
+.col{
+    text-align: center;
+    color: #ccc8c8;
 }
 
-.twitter
-{
-    background: skyblue;
+.item{
+    margin-bottom: 9px;
 }
 
-.google
+
+
+
+
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #101010;  
+    left: -200px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li{
+    color: floralwhite;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #cccbcb;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    right: 20px;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom :5px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+
+.left_box2{
+    position: relative;
+    top: 0px;
+    left: 2000px;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-image: url(../image/lbox.jpg);
+}
+
+
+.left_box3
 {
-    background: #dd4b39;
+    position: absolute;
+    top: 0;
+    left: 2000px;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-image: url(../image/lbox.jpg);
+}
+
+.fa {
+ 
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
 }
